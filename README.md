@@ -1,6 +1,7 @@
 ### Backend Prerequisites:
 
-- `cd backend`
-- `npm init -y`
-- `npm i express mysql2 sequelize argon cors dotenv`
-- `npm i express-session`
+1. Move to `cd backend`
+2. Run initialization `npm init -y`
+3. Run installation `npm i express mysql2 sequelize argon cors dotenv`
+4. Run installation `npm i express-session`
+5. Start backend server with `nodemon index` (Recheck your folder path, it should be in 'your-project/backend' folder)
