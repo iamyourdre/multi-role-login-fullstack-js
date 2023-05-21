@@ -1,0 +1,36 @@
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "John",
+    "email": "john@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "user"
+}
+
+###
+// Get All Users
+GET http://localhost:5000/users
+
+###
+// Get Single User
+GET http://localhost:5000/users/af56e244-f6e0-4078-8361-3e1c85336d43
+
+###
+// Update User
+PATCH http://localhost:5000/users/af56e244-f6e0-4078-8361-3e1c85336d43
+Content-Type: application/json
+
+{
+    "name": "Kaldeniz",
+    "email": "kaldeniz@gmail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "user"
+}
+
+### 
+// Delete User
+DELETE http://localhost:5000/users/71ba1846-edf1-4af0-88a4-93613dd5214d
