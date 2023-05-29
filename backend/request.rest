@@ -41,7 +41,7 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-    "email": "adrian@gmail.com",
+    "email": "kaldeniz@gmail.com",
     "password": "123456"
 }
 
@@ -52,3 +52,35 @@ GET http://localhost:5000/me
 ### 
 // Logout
 DELETE http://localhost:5000/logout
+
+###
+// Get All Products
+GET http://localhost:5000/products
+
+###
+// Post Data Product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Product Kaldeniz 3",
+    "price": 109999
+}
+
+###
+// Get Single Product
+GET http://localhost:5000/products/f7dafd4f-e642-497f-b8ee-3b56665b29e3
+
+###
+// Update Product
+PATCH http://localhost:5000/products/f7dafd4f-e642-497f-b8ee-3b56665b29e3
+Content-Type: application/json
+
+{
+    "name": "Product Kaldeniz Ketiga",
+    "price": 109998
+}
+
+###
+// Delete Product
+DELETE http://localhost:5000/products/5e71a49a-41ce-499b-bd1b-76cc7d45617b

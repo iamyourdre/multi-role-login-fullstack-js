@@ -4,7 +4,7 @@ import Users from "./UserModel.js";
 
 const {DataTypes} = Sequelize;
 
-const Products = db.define('products', {
+const Product = db.define('products', {
     uuid:{
         type: DataTypes.STRING,
         defaultValue: DataTypes.UUIDV4,
@@ -39,7 +39,7 @@ const Products = db.define('products', {
     freezeTableName: true
 });
 
-Users.hasMany(Products);
-Products.belongsTo(Users, {foreignKey: 'userId'});
+Users.hasMany(Product);
+Product.belongsTo(Users, {foreignKey: 'userId'});
 
-export default Products;
+export default Product;
